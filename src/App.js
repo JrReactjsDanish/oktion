@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, createContext, useEffect } from "react";
+import { useRoutes } from "react-router-dom";
+import { publicRoutes } from "../src/routes";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const Context = createContext();
+
+const App = () => {
+  console.log("viewRoutes", publicRoutes);
+  const routing = useRoutes(publicRoutes);
+
+  return <div>{routing}</div>;
+};
 
 export default App;

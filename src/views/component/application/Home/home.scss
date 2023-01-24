@@ -1,0 +1,245 @@
+/* BANNER SECTION */
+
+.banner-block {
+    width: 100%;
+}
+
+.banner-img {
+    /* max-width: 1500px; */
+    height: auto;
+    width: 100%;
+}
+
+.banner-text {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 40px;
+    color: white;
+    font-weight: 600;
+    width: auto;
+    // min-width: auto;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        font-size: 30px;
+        // margin: 0 auto;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    @media (min-width: 799px) and (max-width: 1023px) {
+        font-size: 20px;
+        // margin: 0 auto;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        font-size: 20px;
+        // margin: 0 auto;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+}
+
+/* SEARCH CONTAINER */
+
+.search-container {
+    max-width: 1500px !important;
+    // width: 100%;
+    background-color: #fff !important;
+    padding: 20px 0px;
+    position: relative;
+    bottom: 90px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    // min-width: 800px;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        position: relative;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 799px) and (max-width: 1023px) {
+        // position: relative;
+        margin-top: 40px;
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        // position: relative;
+        margin-top: 40px;
+        margin-bottom: 50px;
+        top: -10px
+    }
+
+
+}
+
+.search-field {
+
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    width: 100%;
+    height: 60px;
+    // width: 500px;
+    // padding: 5px;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 50px;
+        width: 400px;
+        padding: 3px;
+    }
+
+    @media (min-width: 799px) and (max-width: 1023px) {
+        height: 40px;
+        width: 300px;
+    }
+}
+
+.city-field {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    height: 60px;
+    width: 100%;
+    // padding: 5px;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        height: 50px;
+        width: 150px;
+        padding: 3px;
+    }
+
+    @media (min-width: 799px) and (max-width: 1023px) {
+        height: 40px;
+        width: 100px;
+    }
+}
+
+
+
+.src-btn {
+    margin-left: 10px;
+
+    .search-btn {
+        height: 55px;
+        width: auto;
+        margin-left: 10px;
+        // font-color: "#000"
+    }
+}
+
+.search-box-area {
+    margin-top: 10px;
+}
+
+.search-box-area .MuiButtonBase-root {
+    background: #ffc629;
+    color: "#000";
+}
+
+.search-box-area .MuiGrid-grid-xs-2 {}
+
+// .event-tab {
+//     display: flex;
+//     list-style-type: none;
+//     flex-direction: row;
+//     display: inline;
+//     color: black;
+//     width: auto
+// }
+
+/* CARD CONTAINER */
+
+.card-container {
+    color: #fff !important;
+    max-width: 1500px !important;
+    width: 100%;
+    display: flex;
+    // flex-wrap: wrap;
+    align-items: stretch;
+
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        position: absolute;
+        margin-top: 40px;
+        // margin-bottom: 50px;
+    }
+
+    @media (min-width: 799px) and (max-width: 1023px) {
+        position: absolute;
+        margin-top: 40px;
+        // margin-bottom: 50px;
+    }
+
+    @media (min-width: 320px) and (max-width: 768px) {
+        position: absolute;
+        margin-top: 40px;
+        // margin-bottom: 50px;
+        top: -10px;
+    }
+}
+
+
+
+.card-container {
+    position: relative;
+    bottom: 80px;
+    // width: 100%
+}
+
+.cards {
+    margin-top: 15px;
+
+}
+
+.icons {
+    height: 24px;
+    width: 24px;
+    margin: 4px
+}
+
+.card-title {
+    @media (min-width: 320px) and (max-width: 768px) {
+        font-size: 24px;
+    }
+}
+
+/* TAB STYLES */
+
+// .tab-list {
+//     padding: 0;
+//     margin: 0
+// }
+
+
+
+/* FOOTER CONTAINER */
+
+.footer-container {
+    background-color: #393939;
+    /* max-width: 1500px; */
+    width: 100%;
+    height: auto;
+    position: relative;
+    padding: 5px
+}
+
+.card-content-margin {
+    margin: 4px
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
