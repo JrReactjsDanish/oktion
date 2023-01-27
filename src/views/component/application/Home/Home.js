@@ -180,7 +180,8 @@ const Home = () => {
 
           <Box className="search-box-area">
             <Grid container>
-              <Grid item xs={6} sm={6} md={8} lg={8}>
+              {/* rowSpacing={1} spacing={{ xs: 2, sm: 2, md: 2 }} */}
+              <Grid item xs={12} sm={6} md={8} lg={8}>
                 <TextField
                   className="search-field"
                   id="outlined-search"
@@ -189,7 +190,7 @@ const Home = () => {
                   variant="outlined"
                 />
               </Grid>
-              <Grid item xs={4} sm={4} md={2} lg={2}>
+              <Grid item xs={8} sm={4} md={2} lg={2}>
                 <TextField
                   className="city-field"
                   id="outlined-search"
@@ -205,7 +206,7 @@ const Home = () => {
                   }}
                 />
               </Grid>
-              <Grid item xs={2} sm={2} md={2} lg={2} className="src-btn">
+              <Grid item xs={4} sm={2} md={2} lg={2} className="src-btn">
                 <Button
                   className="search-btn"
                   variant="contained"
@@ -262,21 +263,18 @@ const Home = () => {
               <TabPanel value="7" className="p-0"></TabPanel> */}
             </TabContext>
           </Box>
-          <Grid
+          <Box
             container
-            // spacing={{ xs: 2, md: 3 }}
-            // columns={{ xs: 12, sm: 6, md: 4 }}
+            spacing={{ xs: 2, md: 3 }}
+            columns={{ xs: 12, sm: 6, md: 4 }}
             className="cards"
           >
             <Box>
               <Grid
-                // spacing={{ xs: 2, md: 3, lg: 3 }}
                 rowSpacing={2}
-                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+                columnSpacing={{ xs: 1, sm: 2, md: 1, lg: 1 }}
                 container
-                // column={{ xs: 2, sm: 3, md: 4, lg: 4 }}
               >
-                {/* <Stack direction="row" spacing={2}> */}
                 {cardContent.map((item) => {
                   return (
                     <Grid xs={12} sm={6} md={4} lg={3} key={item}>
@@ -353,10 +351,9 @@ const Home = () => {
                     </Grid>
                   );
                 })}
-                {/* </Stack> */}
               </Grid>
             </Box>
-          </Grid>
+          </Box>
         </Box>
       </Box>
 
