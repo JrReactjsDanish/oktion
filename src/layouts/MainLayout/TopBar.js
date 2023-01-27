@@ -9,16 +9,11 @@ import Button from "@mui/material/Button";
 import { NavLink } from "react-router-dom";
 import {
   Avatar,
-  Container,
-  Divider,
   Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemText,
-  Menu,
-  SvgIcon,
-  Hidden,
 } from "@mui/material";
 import gardernImg from "../../assets/images/garden.png";
 import oktionLogo from "../../assets/images/Oktion-Logo.svg";
@@ -104,7 +99,6 @@ function TopBar(props) {
               <Typography
                 variant="h6"
                 component="div"
-                // sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
                 className="navbar-logo"
               >
                 <img src={oktionLogo} />
@@ -124,7 +118,6 @@ function TopBar(props) {
                   keepMounted: true,
                 }}
                 sx={{
-                  // display: { xs: "block" },
                   "& .MuiDrawer-paper": {
                     boxSizing: "border-box",
                     width: 240,

@@ -10,24 +10,15 @@
     }
 }
 
-// .banner-box {
-//     background-image: url("../../../../assets//images//banner/Banner2.png");
-//     width: 100%;
-//     height: auto
-// }
-
 .banner-img {
-    // max-width: 1500px ;
     height: auto;
     width: 100%;
     position: relative;
     @media (min-width: 320px) and (max-width: 798px) {
             height: 200px;
             object-fit: cover;
-            // position: absolute;
             top: 0;
             left: 0;
-            // width: 100%;
         }
 }
 
@@ -40,8 +31,6 @@
     font-size: 52px;
     color: white;
     font-weight: 450;
-        // width: auto;
-    // min-width: auto;
 
     @media (min-width: 1280px) and (max-width: 1499px) {
             font-size: 48px;
@@ -51,7 +40,6 @@
         }
     @media (min-width: 1024px) and (max-width: 1279px) {
         font-size: 34px;
-        // margin: 0 auto;
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -59,7 +47,6 @@
 
     @media (min-width: 799px) and (max-width: 1023px) {
         font-size: 28px;
-        // margin: 0 auto;
         top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -67,7 +54,6 @@
 
     @media (min-width: 320px) and (max-width: 798px) {
         font-size: 20px;
-        // margin: 0 auto;
         top: 24%;
         left: 50%;
         transform: translate(-50%, -50%);
@@ -78,8 +64,6 @@
 /* SEARCH CONTAINER */
 
 .search-container {
-    // display: flex;
-    // max-width: 1500px !important;
     max-width: 96%;
     width: 1500px;
     margin: 0 auto;
@@ -88,81 +72,34 @@
     position: relative;
     bottom: 90px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
-    
-    // min-width: 800px;
 
     @media (min-width: 799px) and (max-width: 1023px) {
             position: relative;
-            // margin-top: 40px;
-        
             bottom: 0px;
             margin-bottom: 20px;
-            // margin-left: 24px;
-                // margin-right: 24px;
         }
     
         @media (min-width: 320px) and (max-width: 798px) {
-            // position: relative;
-            // // margin-top: 40px;
             bottom: 0;
             margin-bottom: 20px;
             padding: 10px 10px;
-                width: 100%;
-            // top: -10px
-            // display: 'none'
+            width: 100%;
     
         }
 
         @media (min-width: 1024px) and (max-width: 1279px) {
-             // width: 740px;
         position: relative;
-        // margin-top: 40px;
             margin-bottom: 20px;
-            // width: 500px;
             bottom: 50px;
             margin-left: 24px;
             margin-right: 24px;
         }
 }
-
-    
-    // .search-container {
-    //     // width: 740px;
-    //     position: relative;
-    //     // margin-top: 40px;
-    //         margin-bottom: 20px;
-    //         // width: 500px;
-    //         bottom: 50px;
-    //         margin-left: 24px;
-    //         margin-right: 24px;
-    // }
-        
-    
-        
+  
     .search-box-area {
         display: flex;
         margin-top: 10px;
     }
-
-// @media (min-width: 1024px) and (max-width: 1279px) {
-//     .search-box-area{
-//         width: 940px;
-//     position: relative;
-//     // margin-top: 40px;
-//     margin-bottom: 20px;
-//     width: 500px;
-//     margin-left: 24px !important;
-// margin-right: 24px !important;
-//     }
-
-// }
-
-// .search-box-area .MuiButtonBase-root {
-//     background: #ffc629;
-//     color: "#000";
-// }
-
-
 
 @media (max-width: 768px) {
     .search-box-area {
@@ -185,51 +122,25 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    // align-items: stretch;
-    // flex: 0 1 auto;
-    // flex-grow: 1;
-    // flex-shrink: 1;
     width: 100%;
     height: 60px;
-    // width: 500px;
-    // padding: 5px;
 
-    // @media (min-width: 1024px) and (max-width: 1279px) {
-        //     height: 50px;
-        //     width: 400px;
-        //     padding: 3px;
-        // }
-        // @media (min-width: 799px) and (max-width: 1023px) {
-        //     height: 40px;
-        //     width: 300p   
-            // }
-            @media (min-width: 320px) and (max-width: 768px) {
-                margin-bottom: 10px;
-            }
-        }
+    @media (min-width: 320px) and (max-width: 768px) {
+            margin-bottom: 10px;
+    }
+}
+
 .city-field {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-        flex: 0 1 auto;
-            // flex-grow: 1;
-            // flex-shrink: 1;
+    flex: 0 1 auto;
     height: 60px;
     width: 100%;
-    // padding: 5px;
 
-    // @media (min-width: 1024px) and (max-width: 1279px) {
-        //     height: 50px;
-        //     width: 300px;
-        //     padding: 3px;
-        // }
-
-// @media (min-width: 799px) and (max-width: 1023px) {
-//     height: 40px;
-//   }
-@media (min-width: 320px) and (max-width: 768px) {
-    margin-top: 10px;
-}
+    @media (min-width: 320px) and (max-width: 768px) {
+        margin-top: 10px;
+    }
 }
 
 .src-btn {
@@ -240,20 +151,8 @@
         width: auto;
         margin-left: 10px;
         background-color: #ffc629;
-        // font-color: "#000"
     }
 }
-
-
-
-// .event-tab {
-//     display: flex;
-//     list-style-type: none;
-//     flex-direction: row;
-//     display: inline;
-//     color: black;
-//     width: auto
-// }
 
 /* CARD CONTAINER */
 
@@ -262,11 +161,6 @@
     margin-left: 10px;
 }
 
-// .card-container {
-//     position: relative;
-//     bottom: 80px;
-//     // width: 100%
-// }
 .card-container {
     display: flex;
     color: #fff !important;
@@ -274,34 +168,17 @@
     width: 1500px;
     margin: 0 auto;
     margin-top: 50px;
-    // display: flex;
-    // flex-wrap: wrap;
-    // align-items: stretch;
-
-    // @media (min-width: 1024px) and (max-width: 1279px) {
-    //     flex-wrap: wrap;
-    //     position: absolute;
-    //     margin-top: 40px;
-    //     // margin-bottom: 50px;
-    // }
-
-    // @media (min-width: 799px) and (max-width: 1023px) {
-    //     flex-wrap: wrap;
-    //     position: absolute;
-    //     margin-top: 40px;
-    //     // margin-bottom: 50px;
-    // }
 
     @media (min-width: 320px) and (max-width: 768px) {
         flex-wrap: wrap;
         position: absolute;
         margin-top: 40px;
-        // margin-bottom: 50px;
         top: -10px;
     }
 }
 
 .card-item {
+    margin-bottom: 20px;
     @media (min-width: 320px) and (max-width: 768px) {
         margin: 0 auto;
     }
@@ -341,8 +218,7 @@
 }
 
 .footer-container {
-    
-    /* max-width: 1500px; */
+
     width: 1500px;
     width: 96%;
     margin: 0 auto;
