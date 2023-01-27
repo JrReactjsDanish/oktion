@@ -50,10 +50,10 @@
 }
 
 .menu-section {
-    max-width: 1500px !important;
+    max-width: 96% !important;
     margin: 0 auto !important;
         // padding: 0 !important;
-    width: 100%;
+    width: 1500px;
 
     // @media (min-width: 320px) and (max-width: 768px) {
         //     display: flex;
@@ -112,6 +112,9 @@
 //     }
 // }
 
+.mobile-nav-container {
+    background-color: #F3F2ED;
+}
 @media only screen and (min-width: 768px) {
     .mobile-nav-container {
         display: none !important;
