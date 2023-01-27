@@ -1,47 +1,67 @@
 /* BANNER SECTION */
 
-.banner-block {
+.oktion-page {
     width: 100%;
+
+    .container {
+        width: 1500px;
+        max-width: 96%;
+        margin: 0 auto;
+    }
 }
 
+// .banner-box {
+//     background-image: url("../../../../assets//images//banner/Banner2.png");
+//     width: 100%;
+//     height: auto
+// }
+
 .banner-img {
-    /* max-width: 1500px; */
+    // max-width: 1500px ;
     height: auto;
     width: 100%;
+    @media (max-width: 768px) {
+            height: 100%;
+            object-fit: cover;
+            // position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
 }
 
 .banner-text {
+    display: flex;
     position: absolute;
     top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 40px;
+    font-size: 52px;
     color: white;
     font-weight: 600;
     width: auto;
     // min-width: auto;
 
     @media (min-width: 1024px) and (max-width: 1279px) {
-        font-size: 30px;
+        font-size: 34px;
         // margin: 0 auto;
-        top: 50%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
     @media (min-width: 799px) and (max-width: 1023px) {
-        font-size: 20px;
+        font-size: 28px;
         // margin: 0 auto;
         top: 30%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
 
-
-    @media (min-width: 320px) and (max-width: 768px) {
-        font-size: 20px;
+    @media (min-width: 320px) and (max-width: 798px) {
+        font-size: 30px;
         // margin: 0 auto;
-        top: 30%;
+        top: 20%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
@@ -51,35 +71,96 @@
 /* SEARCH CONTAINER */
 
 .search-container {
-    max-width: 1500px !important;
-    // width: 100%;
+    // display: flex;
+    // max-width: 1500px !important;
+    max-width: 96%;
+    width: 1500px;
+    margin: 0 auto;
     background-color: #fff !important;
-    padding: 20px 0px;
+    padding: 40px 20px;
     position: relative;
     bottom: 90px;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    
     // min-width: 800px;
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        position: relative;
-        margin-top: 40px;
-        margin-bottom: 50px;
-    }
-
     @media (min-width: 799px) and (max-width: 1023px) {
-        // position: relative;
-        margin-top: 40px;
-        margin-bottom: 50px;
+            position: relative;
+            // margin-top: 40px;
+            bottom: 0;
+            margin-bottom: 20px;
+            margin-left: 24px;
+            margin-right: 24px;
+        }
+    
+        @media (min-width: 320px) and (max-width: 798px) {
+            // position: relative;
+            // // margin-top: 40px;
+            margin-bottom: 20px;
+            // top: -10px
+            display: 'none'
+    
+        }
     }
 
-    @media (min-width: 320px) and (max-width: 768px) {
-        // position: relative;
-        margin-top: 40px;
-        margin-bottom: 50px;
-        top: -10px
+    @media (min-width: 1024px) and (max-width: 1279px) {
+    .search-container {
+        // width: 740px;
+        position: relative;
+        // margin-top: 40px;
+            margin-bottom: 20px;
+            // width: 500px;
+            bottom: 50px;
+            margin-left: 24px;
+            margin-right: 24px;
+    }
+        
+    }
+        
+    .search-box-area {
+        display: flex;
+        margin-top: 10px;
     }
 
+// @media (min-width: 1024px) and (max-width: 1279px) {
+//     .search-box-area{
+//         width: 940px;
+//     position: relative;
+//     // margin-top: 40px;
+//     margin-bottom: 20px;
+//     width: 500px;
+//     margin-left: 24px !important;
+// margin-right: 24px !important;
+//     }
 
+// }
+
+.search-box-area .MuiButtonBase-root {
+    background: #ffc629;
+    color: "#000";
+}
+
+
+
+@media (max-width: 768px) {
+    .search-box-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .search-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+} 
+
+@media (min-width: 770px) {
+    .search-container {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 }
 
 .search-field {
@@ -87,46 +168,45 @@
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    align-items: stretch;
+    // align-items: stretch;
+    // flex: 0 1 auto;
+    // flex-grow: 1;
+    // flex-shrink: 1;
     width: 100%;
     height: 60px;
     // width: 500px;
     // padding: 5px;
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        height: 50px;
-        width: 400px;
-        padding: 3px;
-    }
-
-    @media (min-width: 799px) and (max-width: 1023px) {
-        height: 40px;
-        width: 300px;
-    }
-}
-
+    // @media (min-width: 1024px) and (max-width: 1279px) {
+        //     height: 50px;
+        //     width: 400px;
+        //     padding: 3px;
+        // }
+        // @media (min-width: 799px) and (max-width: 1023px) {
+        //     height: 40px;
+        //     width: 300p                                                                                                    // }
+        }
 .city-field {
     position: relative;
     display: flex;
     flex-wrap: wrap;
-    flex-grow: 1;
+        flex: 0 1 auto;
+            // flex-grow: 1;
+            // flex-shrink: 1;
     height: 60px;
     width: 100%;
     // padding: 5px;
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        height: 50px;
-        width: 150px;
-        padding: 3px;
-    }
+    // @media (min-width: 1024px) and (max-width: 1279px) {
+        //     height: 50px;
+        //     width: 300px;
+        //     padding: 3px;
+        // }
 
-    @media (min-width: 799px) and (max-width: 1023px) {
-        height: 40px;
-        width: 100px;
-    }
+// @media (min-width: 799px) and (max-width: 1023px) {
+//     height: 40px;
+//   }
 }
-
-
 
 .src-btn {
     margin-left: 10px;
@@ -139,16 +219,7 @@
     }
 }
 
-.search-box-area {
-    margin-top: 10px;
-}
 
-.search-box-area .MuiButtonBase-root {
-    background: #ffc629;
-    color: "#000";
-}
-
-.search-box-area .MuiGrid-grid-xs-2 {}
 
 // .event-tab {
 //     display: flex;
@@ -161,27 +232,38 @@
 
 /* CARD CONTAINER */
 
+.card-section{
+    width: 100% !important;
+    margin-left: 10px;
+}
+
 .card-container {
-    color: #fff !important;
-    max-width: 1500px !important;
-    width: 100%;
     display: flex;
+    color: #fff !important;
+    max-width: 96%;
+    width: 1500px;
+    margin: 0 auto;
+    margin-top: 50px;
+    // display: flex;
     // flex-wrap: wrap;
-    align-items: stretch;
+    // align-items: stretch;
 
-    @media (min-width: 1024px) and (max-width: 1279px) {
-        position: absolute;
-        margin-top: 40px;
-        // margin-bottom: 50px;
-    }
+    // @media (min-width: 1024px) and (max-width: 1279px) {
+    //     flex-wrap: wrap;
+    //     position: absolute;
+    //     margin-top: 40px;
+    //     // margin-bottom: 50px;
+    // }
 
-    @media (min-width: 799px) and (max-width: 1023px) {
-        position: absolute;
-        margin-top: 40px;
-        // margin-bottom: 50px;
-    }
+    // @media (min-width: 799px) and (max-width: 1023px) {
+    //     flex-wrap: wrap;
+    //     position: absolute;
+    //     margin-top: 40px;
+    //     // margin-bottom: 50px;
+    // }
 
     @media (min-width: 320px) and (max-width: 768px) {
+        flex-wrap: wrap;
         position: absolute;
         margin-top: 40px;
         // margin-bottom: 50px;
@@ -225,10 +307,17 @@
 
 /* FOOTER CONTAINER */
 
-.footer-container {
+.footer {
     background-color: #393939;
+    margin-top: 30px;
+}
+
+.footer-container {
+    
     /* max-width: 1500px; */
-    width: 100%;
+    width: 1500px;
+    width: 96%;
+    margin: 0 auto;
     height: auto;
     position: relative;
     padding: 5px
