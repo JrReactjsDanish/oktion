@@ -25,22 +25,12 @@ const DashboardLayout = () => {
   return (
     <>
       <React.Fragment>
-        <div
-          // style={{
-          //   backgroundColor: "#F3F2ED",
-          //   // width: "1500px",
-          //   maxWidth: "96%",
-          //   margin: "0 auto",
-          // }}
-        >
-          <div>
-            <TopBar />
-          </div>
-          {/* <NavBar /> */}
+        <div>
+          <TopBar />
         </div>
 
         <div>
-        <Outlet />
+          <Outlet />
         </div>
       </React.Fragment>
     </>

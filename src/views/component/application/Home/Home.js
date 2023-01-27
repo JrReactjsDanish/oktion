@@ -224,7 +224,6 @@ const Home = () => {
 
       <Box className="container">
         <Box className="card-section">
-          {/* <Container className="card-container"> */}
           <Box className="table-container">
             <h1 style={{ color: "black" }}>Popular Events</h1>
 
@@ -254,13 +253,13 @@ const Home = () => {
                   })}
                 </TabList>
               </Box>
-              <TabPanel value="1" className="p-0"></TabPanel>
+              {/* <TabPanel value="1" className="p-0"></TabPanel>
               <TabPanel value="2" className="p-0"></TabPanel>
               <TabPanel value="3" className="p-0"></TabPanel>
               <TabPanel value="4" className="p-0"></TabPanel>
               <TabPanel value="5" className="p-0"></TabPanel>
               <TabPanel value="6" className="p-0"></TabPanel>
-              <TabPanel value="7" className="p-0"></TabPanel>
+              <TabPanel value="7" className="p-0"></TabPanel> */}
             </TabContext>
           </Box>
           <Grid
@@ -271,13 +270,17 @@ const Home = () => {
           >
             <Box>
               <Grid
-                spacing={{ xs: 2, md: 3 }}
-                columns={{ xs: 12, sm: 6, md: 4 }}
+                // spacing={{ xs: 2, md: 3, lg: 3 }}
+                rowSpacing={2}
+                columnSpacing={{ xs: 1, sm: 2, md: 3 }}
+                container
+                // column={{ xs: 2, sm: 3, md: 4, lg: 4 }}
               >
-                <Stack direction="row" spacing={2}>
-                  {cardContent.map((item) => {
-                    return (
-                      <Card sx={{ maxWidth: 320 }}>
+                {/* <Stack direction="row" spacing={2}> */}
+                {cardContent.map((item) => {
+                  return (
+                    <Grid xs={12} sm={6} md={4} lg={3} key={item}>
+                      <Card sx={{ maxWidth: 320 }} className="card-item">
                         <CardMedia
                           component="img"
                           alt="images"
@@ -347,13 +350,13 @@ const Home = () => {
                           </Typography>
                         </CardContent>
                       </Card>
-                    );
-                  })}
-                </Stack>
+                    </Grid>
+                  );
+                })}
+                {/* </Stack> */}
               </Grid>
             </Box>
           </Grid>
-          {/* </Container> */}
         </Box>
       </Box>
 

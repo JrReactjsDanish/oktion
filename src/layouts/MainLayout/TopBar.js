@@ -57,16 +57,8 @@ function TopBar(props) {
     </Box>
   );
 
-  // let activeStyle = {
-  //   textDecoration: "none",
-  // };
-
-  // let activeClassName = "underline";
-
   return (
     <React.Fragment>
-      {/* <Container> */}
-
       <Box className="topbar">
         <Box className="topbar-container">
           <AppBar component="nav" className="nav-bar" elevation={0}>
@@ -146,7 +138,6 @@ function TopBar(props) {
           </Grid>
         </Box>
       </Box>
-      {/* </Container> */}
     </React.Fragment>
   );
 }
